@@ -1,14 +1,14 @@
 {
-  "name": "react-17-suspense",
+  "name": "react-hello-suspense",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server --watch --history-api-fallback",
     "build": "webpack"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.0.1",
     "@babel/polyfill": "^7.0.0",

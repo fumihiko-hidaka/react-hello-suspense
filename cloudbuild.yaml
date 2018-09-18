@@ -8,6 +8,8 @@ steps:
 - name: gcr.io/cloud-builders/gsutil
   args: [
     'rsync',
+    '-a',
+    'public-read',
     '-d',
     'dist',
     'gs://neko-tech-test-storage/hello-suspense'

@@ -1,0 +1,14 @@
+steps:
+- name: node:8.11.4
+  entrypoint: npm
+  args: ['install']
+- name: node:8.11.4
+  entrypoint: npm
+  args: ['run', 'build']
+- name: gcr.io/cloud-builders/gsutil
+  args: [
+    'rsync',
+    '-d',
+    'dist',
+    'gs://neko-tech-test-storage/hello-suspense'
+  ]

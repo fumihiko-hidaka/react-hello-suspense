@@ -10,11 +10,11 @@ const HelloSuspenseWorld = () => {
     return cache;
   }
 
-  throw (async (resolve) => {
+  throw new Promise(async (resolve) => {
     await sleep(5);
     cache = 'hello, suspense world!';
     resolve();
-  })();
+  });
 };
 
 ReactDOM.render(
